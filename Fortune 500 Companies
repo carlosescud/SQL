@@ -55,3 +55,36 @@ VALUES
     ('Company II', 'Telecommunications', 110.5, 2000, 1, 21, 12, 4.9),
     ('Company JJ', 'Manufacturing', 370.0, 3100, 1, 20, 12, 7.6),
     ('Company KK', 'Healthcare', 150.2, 3400, 0, 16, 8, 5.3);
+
+# Analysis:
+
+--1. Identify the companies that offer the most paid time off and have at least 4 or above years in tenure
+SELECT *
+FROM fortune_companies
+WHERE paid_time_off_days >15 AND avg_employee_tenure >4
+ORDER BY paid_time_off_days DESC;
+-- 2. Rank the top 5 companies in revenue
+SELECT *
+FROM fortune_companies
+GROUP BY company_name
+ORDER BY revenue DESC
+LIMIT 5;
+
+-- 3. Find the revenue of all technology companies
+SELECT  company_name, SUM(revenue) AS tech_total_amount
+FROM fortune_companies
+WHERE industry = 'Technology'
+GROUP BY company_name;
+
+--4. Which industry has the highest average revenue
+SELECT industry, AVG(revenue) AS average_revenue
+FROM fortune_companies
+GROUP BY industry
+ORDER BY average_revenue DESC;
+
+-- 5.Identify companies that qualify based on my requirements. They need to have healthcare, make more than 200 revenue and have 20 paid days off
+SELECT company_name, healthcare_benefits, paid_time_off_days
+FROM fortune_companies
+GROUP BY company_name
+HAVING healthcare_benefits = 1 AND revenue > 200 AND paid_time_off_days >= 20
+ORDER BY paid_time_off_days DESC;
