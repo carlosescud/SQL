@@ -1,3 +1,7 @@
+-- Project: Logistics Data Exploration
+-- Goal: Work with a simplified logistics dataset to practice joins and identify customer and shipment relationships.
+-- Dataset: Contains two tables (customers, shipments) with sample data; includes attributes such as customer_id, names, contact info, addresses, package description, weights, shipping methods, and dates.
+-- Skills: Table creation, data insertion, joins, filtering, grouping.
 -- CREATE TABLE customers (
     customer_id INTEGER PRIMARY KEY,
     customer_name TEXT,
