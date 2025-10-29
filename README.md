@@ -57,6 +57,6 @@ Skills used: joins, sorting, aggregation.
 
 ## Connect with Me
 LinkedIn: www.linkedin.com/in/carlos-escudero90  
-Email: escudcarlos@gmail.com  
+Email: carlos.escud90@outlook.com
 
 Thank you for visiting. If you have questions or want to chat about SQL, BI, or analytics work, feel free to reach out. 
