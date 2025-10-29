@@ -1,0 +1,33 @@
+-- Project: Telecommunication Services
+-- Goal: Analyze customer subscriptions and product offerings to identify patterns and extract insights, such as customers subscribed to specific service types.
+-- Dataset: Contains two tables: products (product details including type, speed, data limit, and price) and customer_subscriptions (customer id, product id, price, email). Data is sample and anonymized.
+-- Skills: CREATE TABLE, data insertion, joins, filtering, aggregation
+
+CREATE TABLE products ( product_id INTEGER PRIMARY KEY, product_name TEXT, 
+product_type TEXT, speed_mbps INTEGER, data_limit_gb INTEGER, monthly_price 
+DECIMAL(8, 2) ); CREATE TABLE customer_subscriptions ( customer_id INTEGER 
+PRIMARY KEY, product_id INTEGER, price DECIMAL(8, 2), email TEXT, FOREIGN KEY 
+(product_id) REFERENCES products (product_id) ); INSERT INTO products 
+(product_id, product_name, product_type, speed_mbps, data_limit_gb, 
+monthly_price) VALUES (1, 'Internet', 'Internet', 50, 250, 39.99), (2, 'High-
+Speed Internet', 'Internet', 100, 500, 49.99), (3, 'Fiber Optic Internet', 
+'Internet', 500, 1000, 79.99), (4, 'Data Plan', 'Cell Phone Service', NULL, 10, 
+20.00), (5, 'Family Plan', 'Cell Phone Service', NULL, NULL, 25.00), (6, 
+'Unlimited Data Plan', 'Cell Phone Service', NULL, NULL, 35.00), (7, 'Starter TV
+ Package', 'TV Package', NULL, NULL, 59.99), (8, 'Premium TV Package', 'TV 
+Package', NULL, NULL, 79.99); INSERT INTO customer_subscriptions (customer_id, 
+product_id, price, email) VALUES (12097, 2, 49.99, 'jahnvi.d@example.com'), 
+(12098, 6, 35.00, 'b.krikorian@example.com'), (12099, 3, 79.99, 
+'anita.davis@example.com'), (12100, 8, 79.99, 'l.j.metzger@example.com'), 
+(12101, 5, 25.00, 'e.okafor@example.com'), (12102, 2, 49.99, 
+'susan.wilson@example.com'); -- For this file I wanted to gather customer 
+information from two tables to identify customers whom have specific services. I
+ started off by pulling information from both table to familiarize my self with 
+the data. SELECT * FROM products LIMIT 5; SELECT * FROM customer_subscriptions 
+LIMIT 5; -- Write a query that selects the customer ID of all the customers who 
+are subscribed to Cell Phone service products. SELECT customer_id FROM 
+customer_subscriptions WHERE product_id IN (SELECT product_id FROM products 
+WHERE product_type= 'Cell Phone Service'); -- Write a query that will select the
+ email address of all the customers with the "internet" prduct type. SELECT 
+email FROM customer_subscriptions WHERE product_id IN (SELECT product_id FROM 
+products WHERE product_type = "Internet");
