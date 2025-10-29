@@ -2,87 +2,78 @@
 
 Hi, I am Carlos. I am an MBA student focused on Business Intelligence, Finance, and Data Analytics. I enjoy using SQL to clean data, explore patterns, and generate insights that help businesses make smarter decisions.
 
-This repository highlights a collection of real SQL projects I have completed. Each project includes the business problem, the approach I used, and the insights I produced.
+This repository highlights a collection of real SQL projects I worked on. Each project includes the business problem, the approach I used, and the insights I found.
 
-Feel free to explore and message me on LinkedIn if you have any questions or would like to collaborate.
-
-
-## 🔹 Technical Skills
-• SQL: Joins, Subqueries, CTEs, Aggregations, Window Functions  
-• Excel: Data Modeling, Scenario Analysis, Pivot Tables  
-• Power BI: Data Modeling, DAX, Visual Dashboards  
-• Tableau: Visual Analytics, Mapping, KPI Dashboards  
-• Financial Modeling: Forecasting, DCF, KPI Analysis  
+Feel free to explore, and if you would like to connect or collaborate, message me on LinkedIn.
 
 
-## 🔹 Project Index
+## Technical Skills
+• SQL: joins, subqueries, CTEs, aggregations, window functions  
+• Excel: data modeling, scenario analysis, pivot tables  
+• Power BI: data modeling, DAX, visual dashboards  
+• Tableau: visual analytics, mapping, KPI dashboards  
+• Financial modeling: forecasting, DCF, KPI analysis  
+
+
+## Project Index
 
 | Project | Description | Skills | Link |
 |--------|-------------|--------|------|
-| Sales Trends and Product Analysis | Analyzed Jan and Feb sales to identify revenue trends, customer behavior, and product performance | Joins, Filtering, Aggregation | SQL_Sales_Analysis.sql |
-| Fortune 500 Analysis | Examined firm performance patterns within the Fortune 500 dataset to evaluate trends | CTE, Case Logic, Aggregation | Fortune 500 Analysis |
-| Logistics Company Analysis | Evaluated logistics performance to recommend improvements in delivery and operational efficiency | Joins, Case Logic, Grouping | Logistics Company Analysis |
-| Telecommunications Services | Studied customer patterns in telecommunications to find churn indicators | Aggregations, Grouping | Telecommunication Services |
-| Superstore Database | Performed product level and customer level analysis using Superstore data | Joins, Sorting, Aggregation | Superstore Database |
+| Sales Trends and Product Analysis | Reviewed Jan and Feb sales to identify revenue trends, customer behavior, and product performance | joins, filtering, aggregation | SQL_Sales_Analysis.sql |
+| Fortune 500 Analysis | Evaluated business performance patterns across the Fortune 500 | CTE, case logic, aggregation | Fortune 500 Analysis |
+| Logistics Company Analysis | Looked at logistics performance to recommend improvements in delivery and operational efficiency | joins, case logic, grouping | Logistics Company Analysis |
+| Telecommunications Services | Explored telecom service usage patterns to identify churn indicators | aggregations, grouping | Telecommunication Services |
+| Superstore Database | Analyzed product and customer behavior using Superstore data | joins, sorting, aggregation | Superstore Database |
 
 
-## 🔹 Project Summaries
+## Project Summaries
 
 ### 1. Sales Trends and Product Analysis
-Goal: Understand sales patterns across two separate monthly datasets and answer business questions like:  
+Goal: Understand sales patterns across two monthly datasets and answer business questions such as:  
 • How many unique orders were placed  
-• Which products sold the most  
+• Which products performed best  
 • Which customers placed orders  
 
-Highlights:  
+Key results:  
 • 9268 unique orders in January  
 • 379 iPhone orders in January  
 
-Skills Used: Joins, Aggregation, Subqueries  
+Skills used: joins, aggregation, subqueries  
 File: SQL_Sales_Analysis.sql  
 
 
 ### 2. Fortune 500 Analysis
-Goal: Explore performance indicators across Fortune 500 companies.  
+Goal: Explore business performance indicators across Fortune 500 companies  
 
-What I looked for:  
+Focus areas:  
 • Revenue comparisons  
-• Company category distribution  
-• Insight patterns over time  
+• Company category breakdown  
+• Performance patterns over time  
 
-Skills Used: CTEs, Aggregation  
+Skills used: CTEs, aggregation  
 
 
 ### 3. Logistics Company Analysis
-Goal: Analyze logistics performance and examine how operational factors affect business outcomes.  
+Goal: Review logistics performance and examine how operational factors affect outcomes  
 
-What I looked for:  
+Focus areas:  
 • Shipping patterns  
 • Supplier trends  
 • Cost structures  
 
-Skills Used: Joins, Case Logic, Sorting  
+Skills used: joins, case logic, sorting  
 
 
 ### 4. Telecommunications Services
-Goal: Identify customer behavior patterns and churn indicators.  
+Goal: Identify customer behavior patterns and churn indicators  
 
-What I looked for:  
-• Monthly customers  
-• Frequency of service usage  
+Focus areas:  
+• Monthly usage  
+• Customer activity distribution  
 • Business patterns  
 
-Skills Used: Aggregations, Pattern Analysis  
+Skills used: aggregations, grouping  
 
-
-## 🔹 Folder and File Naming
-Each folder contains:  
-• The SQL file  
-• A short explanation (README)  
-• Visuals or summaries when available  
-
-
-## 🔹 Connect with me
 
 LinkedIn: https://www.linkedin.com/in/carlos-escudero90  
 Email: carlos.escud90@outlook.com
