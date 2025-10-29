@@ -1,4 +1,7 @@
-#This project utilized the following Superstore data:
+-- Project: Superstore Database Analysis
+-- Goal: Analyze inventory data of a superstore to derive insights about product prices, stock levels, categories, and ratings. The analysis addresses questions such as listing items and their prices, calculating the average price of all items, finding the average stock quantity for kitchen supplies, and identifying the highest cost item.
+-- Dataset: A sample table 'superstore' with fields item_id, item_name, category, price, stock_quantity, average_rating representing different products across categories like Kitchen Supplies, Furnishings, Electronics, and Appliances.
+-- Skills: Table creation, data insertion, sorting, aggregation functions (AVG, MAX), grouping and filtering.
 
 CREATE TABLE superstore (
     item_id INTEGER PRIMARY KEY,
@@ -26,23 +29,18 @@ VALUES
     (13, 'Slow Cooker', 'Appliances', 49.95, 30, 4.7),
     (14, 'Cutlery Set', 'Kitchen Supplies', 34.50, 40, 4.4),
     (15, 'Cozy Throw Blanket', 'Furnishings', 24.99, 100, 4.2);
-    
-    
-#For this project, I used SQL to query the Superstore database to get information about the items sold at the store, average price of the items, the average stock quantiy, and the highest priced item. 
-
 
 -- Select all the items and their respective price from the table superstore
-
 SELECT price, item_name
 FROM superstore
 ORDER BY price;
 
 -- Find the average price for all items in the superstore table
-Select AVG(PRICE)
+SELECT AVG(price)
 FROM superstore;
 
 -- Find the average stock quantity for all kitchen items in the superstore table
-SELECT Category, AVG(stock_quantity) 
+SELECT category, AVG(stock_quantity)
 FROM superstore
 WHERE category = 'Kitchen Supplies';
 
