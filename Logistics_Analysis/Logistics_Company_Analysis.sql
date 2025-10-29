@@ -1,3 +1,7 @@
+-- Project: Logistics Company Analysis
+-- Goal: Analyze customer and shipment data for a logistics company, joining customers and shipments and filtering by weight, addresses, and other parameters
+-- Dataset: Sample customers and shipments tables with insert statements
+-- Skills: SQL DDL, inserts, joins, filtering, ordering
 CREATE TABLE customers (
     customer_id INTEGER PRIMARY KEY,
     customer_name TEXT,
